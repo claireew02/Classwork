@@ -19,4 +19,8 @@ public class Fraction implements Comparable<Fraction> {
         return 0;
     }
 
+    public int simplify() {
+        return 0;
+    }
+
 }
