@@ -19,8 +19,15 @@ public class Fraction implements Comparable<Fraction> {
         return 0;
     }
 
-    public int simplify() {
-        return 0;
+    @Override
+    public boolean equals(Object o){
+        if (o instanceof Fraction){
+            return this.compareTo((Fraction)o) == 0;
+        }
+        return false;
+    }
+
+    private void simplify(){
     }
 
 }
